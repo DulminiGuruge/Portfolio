@@ -6,12 +6,19 @@
     <title>Dulmini Guruge</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Favicon  -->
+    <link rel="icon" href="./img/logo.png" style="border-radius: 50px;">
+    <!-- Custom styles for this template -->
+    <link href="CSS/styles.css" rel="stylesheet">
+    
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark text-white">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark text-white ">
       <div class="container">
-        <a class="navbar-brand" href="#" style="color: bisque;">Dulmini Guruge</a> 
+          <!-- Image Logo -->
+          <a class="navbar-brand logo-image" style="color: bisque;" href="index.html"><img src="./img/logo.png" style="width: 50px;height: 50px;border-radius: 50px;">   Dulmini Guruge</a>  
+        
       
         
     
@@ -30,7 +37,7 @@
               <a class="nav-link" href="#Education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Certifications">Certifications</a>
+              <a class="nav-link" href="#ContactMe">Contact Me</a>
             </li>
             
           </ul>
@@ -41,16 +48,18 @@
   <main>
 
     <!--Showcase-->
-    <section class="bg-dark text-light p-5 text-center" >
-      <div class="container">
+    <section class="bg-dark text-light p-5  text-center" >
+      <div class="container" id="Home">
         <div class="d-flex flex-column align-items-center">
-          <div >
-            <img class="w-5 p-5 align-items-right " src="img/img1.svg" alt="" width="304" height="236"/>
+          
+
+          <div class="oval-front-img py-5">
+            
           </div>
-          <div>
+          <div class="mt-3">
             
 
-            <h2>Full Stack Web Developer</h2>
+            <h2>Software Developer</h2>
             <p>
               Experienced in React, Django and ASP.net web development
             </p>
@@ -70,71 +79,381 @@
       </div>
 
     </section>
+    <!--Services-->
 
-    <!--Projects-->
+    <div class="container marketing mt-5">
+      <div class="text-center m-5"><h3 class="fw-bolder">My Services</h3></div>
+      
 
-    <section class="bg-light m-5" id="Portfolio">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md">
-            <div class="card " >
-              <img class="card-img-top" src="./img/foodie.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Foodie Thoughts</h4>
-                <p class="card-text">This MVC ASP.NET web app is developed to add recipes by registering and creating your food blog. Features of the web application are controlled according to the role of the logged user. PostgreSQL is used as the database.</p>
-                <a href="#" class="btn btn-primary">Code</a>
-                <a href="#" class="btn btn-primary">Live</a>
-              </div>
-            </div>
-
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" src="./img/frontend.svg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+   -->
+          <img class="w-5 p-5 align-items-right " src="img/frontend.svg" alt="" width="304" height="236"/>
+          <h5>Front End Development</h5>
+          <div class="justify-content">
+            <p>I am skilled in developing web applications using React.js, Bootstrap, CSS, HTML, and JavaScript. Additionally, I have experience in creating desktop applications using PyQt5 and building websites using Squarespace.</p>
           </div>
+        
+          
+          <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+         <!--  <div class="icons-container">
+            <img src="images/details-icon-photoshop.png" alt="alternative">
+            <img src="images/details-icon-illustrator.png" alt="alternative">
+            <img src="images/details-icon-html.png" alt="alternative">
+            <img src="images/details-icon-css.png" alt="alternative">
+            <img src="images/details-icon-bootstrap.png" alt="alternative">
+            <img src="images/details-icon-javascript.png" alt="alternative">
+        </div> --> <!-- end of icons-container -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="w-5 p-5 align-items-right " src="img/backend.svg" alt="" width="304" height="236"/>
+        
+          <h5>Back End Development</h5>
+          <p>I develop company dashboards and REST APIs using ASP.NET MVC and Django. I am skilled in SQL, MySQL, NoSQL, Python, Java, and C. I have worked with Azure, AWS, Docker, and Linux.</p>
+         
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
+          <img class="w-5 p-5 align-items-right " src="img/dataanlyst.svg" alt="" width="304" height="236"/>
+          <h5>Data Vizualization</h5>
+          <p>
+            I have experience in collecting data, cleaning data, analysing data using Python along with libraries like numpy and pandas. Futher, I have experience in vizualizing data using D3.js.
+          </p>
+          
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
 
-          <div class="col-md">
-            <div class="card " >
-              <img class="card-img-top" src="./img/little_lemon.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Little Lemon Front End</h4>
-                <p class="card-text">Little Lemon is a front-end for a restaurant created as the capstone project for a meta front-end development course using React.js and React Hooks. Formik, Material UI and Yup are used to make reservations using forms for the booking page.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
+    
+    <!--About me-->
+    <section class="bg-light py-5">
+      <div class="container px-5">
+          <div class="row gx-5 justify-content-center">
+              <div class="col-xxl-8">
+                  <div class="text-center my-5">
+                      <h3 class=" fw-bolder"><span class="text-gradient d-inline">Why Work With Me</span></h3>
+                      <p class="lead fw-light mb-4">I am passionate about creating solutions that help businesses grow rapidly. My skillset is diverse, covering both front-end and back-end development, which I have gained through practical experience in the industry.</p>
+                      
+                      <p class="text-muted">I am actively seeking job opportunities where I can contribute, learn, and grow. If you have any suitable openings that align with my skills and experience, please reach out to me at dulminiguruge@gmail.com.</p>
+                   
+                  </div>
               </div>
-            </div>
           </div>
-
-          <div class="col-md">
-            <div class="card " >
-              <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-              </div>
-            </div>
-
-          </div>
+      </div>
+  </section>
 
    
-          
+   <!-- Projects Section-->
+   <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
+    <div class="text-center m-5"><h3 class="fw-bolder">My Projects</h3></div>
+    <br></br>
+ 
+    <div class="container">
+      <div class="row  ">
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 col-md-6 d-none d-md-block">
+                  <img src="./img/little_lemon.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+    
+                <!-- Image on top of the text for sm screens -->
+                <div class="col-sm-12 d-md-none">
+                  <img src="./img/little_lemon.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+              
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6 col-md-6">
+                  <div class="card-body">
+                      <h4 class="card-title">Little Lemon Front End</h4>
+                      <p class="card-text">Little Lemon is a front-end for a restaurant created as the capstone project for a meta front-end development course using React.js and React Hooks. Formik, Material UI and Yup are used to make reservations using forms for the booking page.</p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            
+                              <button type="button" class="btn btn-sm btn-outline-secondary"  onclick=littlelemonLive()>Live</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=littlelemonGit()>Code</button>
+                          </div>
+                          <small class="text-body-secondary">9 mins</small>
+                      </div>
+                  </div>
+              </div>
+    
+            
+          </div>
+      </div>
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 col-md-6 d-none d-md-block">
+                  <img src="./img/littlelemon_api.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+                <!-- Image on top of the text for sm screens -->
+              <div class="col-sm-12 d-md-none">
+                  <img src="./img/littlelemon_api.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6 col-md-6">
+                  <div class="card-body">
+                      <h4 class="card-title">Little Lemon Backend</h4>
+                      <p class="card-text">This API was developed using ASP.net to communicate with the react front-end of the Little Lemon website. I have configured Swagger UI to visualize and interact with the API. This API gets data from the reservation form created using Formik.</p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=littlelemonapiGit()>Code</button>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+  
+            
+          </div>
+      </div>
+
+
+      <div class="card g-3">
+        <div class="row no-gutters">
+            <!-- Image on the left for lg and md screens -->
+            <div class="col-lg-6 col-md-6 d-none d-md-block">
+                <img src="./img/foodie.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+            </div>
+             <!-- Image on top of the text for sm screens -->
+             <div class="col-sm-12 d-md-none">
+              <img src="./img/foodie.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+             </div>
+            
+            <!-- Text on the right for lg and md screens -->
+            <div class="col-lg-6 col-md-6">
+                <div class="card-body">
+                    <h4 class="card-title">Foodie Thoughts</h4>
+                    <p class="card-text">This MVC ASP.NET web app is developed to add recipes by registering and creating your food blog. Features of the web application are controlled according to the role of the logged user. PostgreSQL is used as the database.</p>
+                    
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick=foodieGit()>Code</button>
+                        </div>
+                        <small class="text-body-secondary">9 mins</small>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+ 
+
+  <div class="card g-3">
+    <div class="row no-gutters">
+        <!-- Image on the left for lg and md screens -->
+        <div class="col-lg-6 col-md-6 d-none d-md-block">
+            <img src="./img/helpkids.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+        </div>
+
+         <!-- Image on top of the text for sm screens -->
+         <div class="col-sm-12 d-md-none">
+          <img src="./img/helpkids.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+      </div>
+        
+        <!-- Text on the right for lg and md screens -->
+        <div class="col-lg-6 col-md-6">
+            <div class="card-body">
+                <h4 class="card-title">HELP KIDS</h4>
+                <p class="card-text">HELP KIDS is a community-based web application developed for kids who need financial assistance in low-income families. I used Node.js, Express framework and MySQL database in designing the project and used Embedded JavaScript templates (EJS) to create views.</p>
+                
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick=helpkidsGit()>Code</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                </div>
+            </div>
+        </div>
+
        
+    </div>
+</div>
+<div class="card g-3">
+  <div class="row no-gutters">
+      <!-- Image on the left for lg and md screens -->
+      <div class="col-lg-6 col-md-6 d-none d-md-block">
+          <img src="./img/networkvizualisation.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+      </div>
 
+       <!-- Image on top of the text for sm screens -->
+       <div class="col-sm-12 d-md-none">
+        <img src="./img/networkvizualisation.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+    </div>
+      
+      <!-- Text on the right for lg and md screens -->
+      <div class="col-lg-6 col-md-6">
+          <div class="card-body">
+              <h4 class="card-title">Network Visualization</h4>
+              <p class="card-text">This network visualization created using D3.js shows countries' import and export trade relationships. Nodes represent the countries, and the edges represent the trade relations. I extracted the data from a CSV file using Python, used D3.js to create data visualization and added interactions when clicking on the nodes.</p>
+              
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick=datavizualizationGit()>Code</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+              </div>
+          </div>
+      </div>
 
+     
+  </div>
+</div>
+
+<div class="card g-3">
+  <div class="row no-gutters">
+      <!-- Image on the left for lg and md screens -->
+      <div class="col-lg-6 col-md-6 d-none d-md-block">
+          <img src="./img/portfolio.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+      </div>
+
+       <!-- Image on top of the text for sm screens -->
+       <div class="col-sm-12 d-md-none">
+        <img src="./img/portfolio.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+    </div>
+      
+      <!-- Text on the right for lg and md screens -->
+      <div class="col-lg-6 col-md-6">
+          <div class="card-body">
+              <h4 class="card-title">React Portfolio</h4>
+              <p class="card-text">This portfolio was created using React.js for the Advanced React course designed by Meta. <br>I used Chakra UI components and configured useFormik Hook and Yup for form validation.</p>
+              
+              <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick=samplePortfolioLive()>Live</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick=samplePortfolioGit()>Code</button>
+                  </div>
+                  <small class="text-body-secondary">9 mins</small>
+              </div>
+          </div>
+      </div>
+
+     
+  </div>
+</div>
+
+      </div>
+  
+  
+  </section>
+ <!--Education-->
+
+    <section id="Education">
+      <div class="container rounded-4 mt-5 py-5 px-4 px-md-5">
+        <div class="text-center m-5"><h3 class="fw-bolder">Education</h3></div>
+        <div class="mt-4 p-5 text-bg-light rounded">
+          <div class="row">
+            <div class="col-10"><h5>Bachelor of Science Four-Year in Computer Science</h5></div> 
+            <div class="col-2" style="color: #6c63ff"><h5>2020 - 2023</h5></div> 
+          </div>
+          <div class="row">
+            <div class="col-10"><p>University of Saskatchewan, Canada</p></div> 
+            <div class="col-2"><p>with Distinction</p></div> 
+          </div>
+
+        </div>   
+         
         </div>
       </div>
 
     </section>
 
-    <section id="Education">
+
+
+    <section id="ContactMe">
+        <!-- Contact form-->
+        <div class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
+          <div class="text-center mb-5">
+              <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+              <h3 class="fw-bolder">Get in touch</h3>
+              <p class="lead fw-normal text-muted mb-0">Let's work together!  </p>
+              <p class="lead fw-normal text-muted mb-0">Fill this form or send an email at <strong>dulminiguruge@gmail.com</strong></p>
+              <img class="w-5 p-5 align-items-right " src="img/img1.svg" alt="" width="304" height="236"/>
+          </div>
+          <div class="row gx-5 justify-content-center">
+              <div class="col-lg-8 col-xl-6">
+                 
+                    <form method="POST" name="PortfolioContact" data-netlify="true">
+                      <!-- Name input-->
+                      <div class="form-floating mb-3">
+                          <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                          <label for="name">Full name</label>
+                          <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                      </div>
+                      <!-- Email address input-->
+                      <div class="form-floating mb-3">
+                          <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                          <label for="email">Email address</label>
+                          <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                          <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                      </div>
+                 
+                      <!-- Message input-->
+                      <div class="form-floating mb-3">
+                          <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                          <label for="message">Message</label>
+                          <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                      </div>
+                      <!-- Submit success message-->
+                      <!---->
+                      <!-- This is what your users will see when the form-->
+                      <!-- has successfully submitted-->
+                      <div class="d-none" id="submitSuccessMessage">
+                          <div class="text-center mb-3">
+                              <div class="fw-bolder">Form submission successful!</div>
+                              <!-- To activate this form, sign up at
+                              <br />
+                              <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a> -->
+                          </div>
+                      </div>
+                      <!-- Submit error message-->
+                      <!---->
+                      <!-- This is what your users will see when there is-->
+                      <!-- an error submitting the form-->
+                      <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                      <!-- Submit Button-->
+                      <div class="d-grid"><button class="btn btn-lg disabled" style="background-color: #6c63ff;color: aliceblue;" id="submitButton" type="submit">Submit</button></div>
+                  </form>
+              </div>
+          </div>
+      </div>
 
     </section>
-    <section id="Certifications">
 
-    </section>
+
   </main>
 
-    <footer>
-
+   
+  <footer class="bg-dark text-light  d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+          <p class="col-md-4 mb-0  text-light px-5">Copyright &copy; 2023 Dulmini Guruge</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end text-light px-5">
+            <li class="nav-item"><a href="#Home" class="nav-link px-2 ">Home</a></li>
+            <li class="nav-item"><a href="#Portfolio" class="nav-link px-2 ">Portfolio</a></li>
+            <li class="nav-item"><a href="#Education" class="nav-link px-2 ">Education</a></li>
+            <li class="nav-item"><a href="#ContactMe" class="nav-link px-2 ">Contact Me</a></li>
+            
+          </ul>
     </footer>
-    
+      
+    <script src="/Javascript/functions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
