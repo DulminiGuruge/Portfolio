@@ -32,7 +32,8 @@
   .oval-front-img {
     width: 110px;
     height: 135px;
-    background-image: linear-gradient( rgba(52, 54, 60, 0.268), rgba(93, 95, 99, 0.319)), url("../img/scaled.jpg");
+    /* background-image: linear-gradient( rgba(70, 73, 80, 0.268), rgba(93, 95, 99, 0.319)), url("../img/portfolioimg.jpg"); */
+    background-image: url("../img/portfolioimg.jpg");
     
     
     border-radius: 50%;
