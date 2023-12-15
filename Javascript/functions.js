@@ -31,8 +31,8 @@ function datavizualizationGit() {
     window.open('https://github.com/DulminiGuruge/Data_Visualization_D3.js', '_blank');
 }
 
-function openLink() {
-    window.open('https://littlelemon-website.onrender.com/', '_blank');
+function littlelemonapiLive() {
+    window.open('https://littlelemondataapi.azurewebsites.net/api/Booking', '_blank');
 }
 function openLink() {
     window.open('https://littlelemon-website.onrender.com/', '_blank');
