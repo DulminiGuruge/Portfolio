@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md bg-dark navbar-dark text-white ">
       <div class="container">
           <!-- Image Logo -->
-          <a class="navbar-brand logo-image" style="color: bisque;" href="index.html"><img src="./img/logo.png" style="width: 50px;height: 50px;border-radius: 50px;">   Dulmini Guruge</a>  
+          <a class="navbar-brand logo-image" style="color: #D9D9D9;" href="index.html"><img src="./img/logo.png" style="width: 50px;height: 50px;border-radius: 50px;">   Dulmini Guruge</a>  
         
       
         
@@ -26,12 +26,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto" style="color: bisque;" > 
+          <ul class="navbar-nav ms-auto" style="color: #D9D9D9;" > 
             <li class="nav-item">
               <a class="nav-link"  href="#Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
+              <a class="nav-link" href="#Portfolio">My Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#Education">Education</a>
@@ -61,7 +61,9 @@
 
             <h2>Software Developer</h2>
             <p>
-              Experienced in React, Django and ASP.net web development
+              Passionate about writing clear, optimized, documented, and thoroughly tested code. 
+              
+              <!-- Experienced in React, Django and ASP.net web development -->
             </p>
             <a href="https://github.com/DulminiGuruge" target="_blank" class="btn btn-dark rounded-pill text-white border border-bisque mb-5">
               <i class="fa fa-github fa-1x"></i> GitHub
@@ -72,6 +74,51 @@
             <a href="mailto: dulminiguruge@gmail.com" target="_blank" class="btn btn-dark rounded-pill text-white border border-bisque mb-5">
               <i class="fa fa-envelope fa-1x"></i> Email
             </a>
+           
+            <a href="https://drive.google.com/drive/folders/1D943mhyxoeLR1X7yl84L0T0NDXxobIH1?usp=drive_link" target="_blank" class="btn btn-dark rounded-pill text-white border border-bisque mb-5">
+              <i class="fa fa-file fa-1x"></i> Resume
+            </a>
+            <a href="#Portfolio" class="nav-link px-2 " style="color: #D9D9D9;"> <p id="demo"></p></a>
+            
+            
+         
+            <script>
+              var rotations = 300;  // Set the number of rotations
+              var currentRotation = 1;
+              
+              var i = 0;
+              var txt = 'Click here to view My Projects';
+              var speed = 150;
+              var delayBetweenRotations = 100; // Adjust the delay
+              
+              function typeWriter() {
+                if (i < txt.length * rotations) {
+                  if (i % txt.length === 0 && currentRotation < rotations) {
+                    currentRotation++;
+                    document.getElementById("demo").innerHTML = '';  // Clear the content for the new rotation
+                  } else if (currentRotation === rotations) {
+                    // Start a new rotation after a brief delay
+                    setTimeout(function() {
+                      currentRotation = 1;
+                      typeWriter();
+                    }, delayBetweenRotations);
+                    return;
+                  }
+              
+                  document.getElementById("demo").innerHTML += txt.charAt(i % txt.length);
+                  i++;
+                  setTimeout(typeWriter, speed);
+                }
+              }
+              
+              // function when the document loads
+              document.addEventListener("DOMContentLoaded", function() {
+                typeWriter();
+              });
+              </script>
+              
+
+            
   
   
           </div>
@@ -108,6 +155,7 @@
             <img src="images/details-icon-bootstrap.png" alt="alternative">
             <img src="images/details-icon-javascript.png" alt="alternative">
         </div> --> <!-- end of icons-container -->
+
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="w-5 p-5 align-items-right " src="img/backend.svg" alt="" width="304" height="236"/>
@@ -128,24 +176,7 @@
       </div><!-- /.row -->
 
 
-    
-    <!--About me-->
-    <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
-      <div class="container px-5">
-          <div class="row gx-5 justify-content-center">
-              <div class="col-xxl-8">
-                  <div class="text-center my-5">
-                      <h3 class=" fw-bolder"><span class="text-gradient d-inline">Why Work With Me</span></h3>
-                      <p class="lead fw-light mb-4">I am passionate about creating solutions that help businesses grow rapidly. My skillset is diverse, covering both front-end and back-end development, which I have gained through practical experience in the industry.</p>
-                      
-                      <p class="text-muted">I am actively seeking job opportunities where I can contribute, learn, and grow. If you have any suitable openings that align with my skills and experience, please reach out to me at dulminiguruge@gmail.com.</p>
-                   
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
+  
    
    <!-- Projects Section-->
    <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5" id="Portfolio">
@@ -352,6 +383,24 @@
   
   </section>
 <!--Skills-->
+
+  <!--About me-->
+  <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+                <div class="text-center my-5">
+                    <h3 class=" fw-bolder"><span class="text-gradient d-inline">Why Work With Me</span></h3>
+                    <p class="lead fw-light mb-4">I am passionate about creating solutions that help businesses grow rapidly. My skillset is diverse, covering both front-end and back-end development, which I have gained through practical experience in the industry.</p>
+                    
+                    <p class="text-muted">I am actively seeking job opportunities where I can contribute, learn, and grow. If you have any suitable openings that align with my skills and experience, please reach out to me at contact@dguruge.com.</p>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- My Skills Section -->
 <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
   <div class="container px-5">
@@ -545,7 +594,7 @@
       
           <ul class="nav col-12 col-lg-8 justify-content-between text-light px-5">
             <li class="nav-item"><a href="#Home" class="nav-link px-2 ">Home</a></li>
-            <li class="nav-item"><a href="#Portfolio" class="nav-link px-2 ">Portfolio</a></li>
+            <li class="nav-item"><a href="#Portfolio" class="nav-link px-2 ">My Projects</a></li>
             <li class="nav-item"><a href="#Education" class="nav-link px-2 ">Education</a></li>
             <li class="nav-item"><a href="#ContactMe" class="nav-link px-2 ">Contact Me</a></li>
             
