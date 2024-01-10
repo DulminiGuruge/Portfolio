@@ -1,5 +1,4 @@
-/* MARKETING CONTENT
--------------------------------------------------- */
+
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
@@ -46,7 +45,38 @@
     /* Additional styles if needed */
 }
 .nav-item a{
-    color: #6c63ff;
+    color: #D9D9D9;
+}
+
+#text {
+  font-size: 20px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #333;
+  animation: typing 4s steps(40, end) infinite;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from, to {
+      width: 0;
+  }
+}
+
+#cursor {
+  display: inline-block;
+  width: 2px;
+  height: 20px;
+  background-color: #333;
+  margin-left: 2px;
+  animation: cursor 0.8s infinite;
+}
+
+@keyframes cursor {
+  50% {
+      opacity: 0;
+  }
 }
 
 
