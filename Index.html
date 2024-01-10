@@ -81,43 +81,31 @@
             </a>
             <a href="#Portfolio" class="nav-link px-2 " style="color: #D9D9D9;"> <p id="demo"></p></a>
             
-            
-         
+
             <script>
-              var rotations = 2;  // Set the number of rotations
+              var rotations = 3;  // Set the number of rotations
               var currentRotation = 1;
               
               var i = 0;
               var txt = 'Click here to view My Projects';
-              var speed = 150;
-              var delayBetweenRotations = 100; // Adjust the delay
+              var speed = 50;
               
               function typeWriter() {
-                if (i < txt.length * rotations) {
-                  if (i % txt.length === 0 && currentRotation < rotations) {
-                    currentRotation++;
-                    document.getElementById("demo").innerHTML = '';  // Clear the content for the new rotation
-                  } else if (currentRotation === rotations) {
-                    // Start a new rotation after a brief delay
-                    setTimeout(function() {
-                      currentRotation = 1;
-                      typeWriter();
-                    }, delayBetweenRotations);
-                    return;
+                if (i < txt.length) {
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
                   }
-              
-                  document.getElementById("demo").innerHTML += txt.charAt(i % txt.length);
-                  i++;
-                  setTimeout(typeWriter, speed);
-                }
               }
               
-              // function when the document loads
+              // Call the function when the document loads
               document.addEventListener("DOMContentLoaded", function() {
                 typeWriter();
               });
               </script>
-              
+            
+         
+        
 
             
   
@@ -239,7 +227,7 @@
                       
                       <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
-                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=littlelemonapiLive()>Live</button> 
+                              <!-- <button type="button" class="btn btn-sm btn-outline-secondary" onclick=littlelemonapiLive()>Live</button>  -->
                               <button type="button" class="btn btn-sm btn-outline-secondary" onclick=littlelemonapiGit()>Code</button>
                           </div>
                           
@@ -522,7 +510,7 @@
               <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
               <h3 class="fw-bolder">Get in touch</h3>
               <p class="lead fw-normal text-muted mb-0">Let's work together!  </p>
-              <p class="lead fw-normal text-muted mb-0">Fill this form or send an email at <a href="mailto:dulminiguruge@gmail.com" style="color: #6c63ff;"><strong>dulminiguruge@gmail.com</strong></a></p>
+              <p class="lead fw-normal text-muted mb-0">Fill this form or send an email at <a href="mailto:dulminiguruge@gmail.com" style="color: #6c63ff;"><strong>contact@dguruge.com</strong></a></p>
               <img class="w-5 p-5 align-items-right " src="img/img1.svg" alt="" width="304" height="236"/>
           </div>
           <div class="row gx-5 justify-content-center">
