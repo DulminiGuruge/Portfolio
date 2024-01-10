@@ -8,7 +8,7 @@ function littlelemonGit() {
 }
 //little lemon backend
 function littlelemonapiGit() {
-    window.open('https://github.com/DulminiGuruge/littlelemon_asp.net_api', '_blank');
+    window.open('https://github.com/DulminiGuruge/RestaurantMenuAPI_Serialization', '_blank');
 }
 
 function foodieGit() {
