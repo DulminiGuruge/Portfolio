@@ -16,7 +16,8 @@ function foodieGit() {
 }
 
 function foodieView(){
-    window.location.href = 'foodiethought.html';
+    window.open('foodiethought.html', '_blank');
+    
 }
 
 function samplePortfolioGit() {
