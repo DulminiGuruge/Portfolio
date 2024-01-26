@@ -15,6 +15,10 @@ function foodieGit() {
     window.open('https://github.com/DulminiGuruge/Food_Blog_ASP.NET', '_blank');
 }
 
+function foodieView(){
+    window.location.href = 'foodiethought.html';
+}
+
 function samplePortfolioGit() {
     window.open('https://github.com/DulminiGuruge/SamplePortfolioReact', '_blank');
 }
