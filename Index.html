@@ -59,9 +59,10 @@
           <div class="mt-3">
             
 
-            <h2>Software Developer</h2>
+            <!-- <h2>Software Developer</h2> -->
             <p>
               Passionate about writing clean, optimized, documented, and thoroughly tested code. 
+              <br/>Apart from developing software applications, I spend time swimming. During summer, I would love to hike and camp.
               
               <!-- Experienced in React, Django and ASP.net web development -->
             </p>
@@ -118,43 +119,22 @@
 
     </section>
     <!--Services-->
-
-    <div class="container marketing mt-5" id="Services">
-      <div class="text-center m-5"><h3 class="fw-bolder">My Services</h3></div>
-      
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <!-- <svg class="bd-placeholder-img rounded-circle" src="./img/frontend.svg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-   -->
-          <img class="w-5 p-5 align-items-right " src="img/frontend.svg" alt="" width="304" height="236"/>
-          <h5>Front End Development</h5>
-          <div class="justify-content">
-            <p>I am skilled in developing web applications using React.js, Bootstrap, CSS, HTML, and JavaScript. Additionally, I have experience in creating desktop applications using PyQt5 and building websites using Squarespace.</p>
-          </div>
-        
-        
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="w-5 p-5 align-items-right " src="img/backend.svg" alt="" width="304" height="236"/>
-        
-          <h5>Back End Development</h5>
-          <p>I develop company dashboards and REST APIs using ASP.NET MVC and Django. I am skilled in SQL, MySQL, NoSQL, Python, Java, and C. I have worked with Azure, AWS, Docker, and Linux.</p>
-         
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg> -->
-          <img class="w-5 p-5 align-items-right " src="img/dataanlyst.svg" alt="" width="304" height="236"/>
-          <h5>Data Vizualization</h5>
-          <p>
-            I have experience in collecting data, cleaning data, analysing data using Python along with libraries like numpy and pandas. Futher, I have experience in vizualizing data using D3.js.
-          </p>
-          
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
+      <!--About me-->
+  <!-- <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+                <div class="text-center my-5">
+                    <h3 class=" fw-bolder"><span class="text-gradient d-inline">Why Work With Me</span></h3>
+                    <p class="lead fw-light mb-4">I am passionate about creating software solutions and solving leetcode questions. My skillset is diverse, covering both front-end and back-end development, which I have gained through practical experience in the industry.</p>
+                    
+                    <p class="text-muted">Apart from developing software application I spend time swimming. Other than that I would love to hike and do camping during summer.</p>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
 
   
    
@@ -165,6 +145,135 @@
  
     <div class="container">
       <div class="row  ">
+
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 d-none d-md-block">
+                  <img src="./img/CropPredictions.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+        
+               <!-- Image on top of the text for sm screens -->
+               <div class="col-sm-12 d-md-none">
+                <img src="./img/CropPredictions.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+            </div>
+              
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6">
+                  <div class="card-body">
+                      <h4 class="card-title">Crop Yield Predictor</h4>
+                      <p class="card-text">The project involved developing a model to predict crop yields using Canadian crop yield and geospatial weather data. The goal was to estimate the relationship between weather data and crop yields based on geographical location using various machine-learning algorithms. Google BigQuery public data was used in this project to achieve this. The XGBoost model was one of the machine learning algorithms that was applied. The model achieved a remarkable 95% accuracy rate in its predictions. </p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=cropyieldPage()>View</button> 
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=cropyieldGit()>Code</button>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+        
+             
+          </div>
+        </div>
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 d-none d-md-block">
+                  <img src="./img/can_weather.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+        
+               <!-- Image on top of the text for sm screens -->
+               <div class="col-sm-12 d-md-none">
+                <img src="./img/can_weather.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+            </div>
+              
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6">
+                  <div class="card-body">
+                      <h4 class="card-title"> Can Weather data package </h4>
+                      <p class="card-text">Developed a climate package using weather station readings within 50 km of proximity for provided longitude and latitude. The package uses the Environment Canada dataset to provide yearly weather summaries based on the provided data range. </p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=canweatherPage()>View</button> 
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=canweatherGit()>Code</button>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+        
+             
+          </div>
+        </div>
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 d-none d-md-block">
+                  <img src="./img/bitcoingame.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+        
+               <!-- Image on top of the text for sm screens -->
+               <div class="col-sm-12 d-md-none">
+                <img src="./img/bitcoingame.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+            </div>
+              
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6">
+                  <div class="card-body">
+                      <h4 class="card-title">Cryptocurrency Teaching Tool</h4>
+                      <p class="card-text">Developed a cryptocurrency learning tool using Django for a financial economics course at the University of Saskatchewan. The website features a chat channel, allowing for seamless communication between the professor and students. To ensure optimal performance and reliability, I hosted the Django app in a Google Cloud Compute Engine container, which leveraged Google Redis Memstore and Cloud SQL. Additionally, the website's front end communicates with a containerized Flask REST API, which is hosted on Google Cloud Run and handles Bitcoin mining and validation logic. </p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=bitcoingamePage()>View</button> 
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=bitcoingameGit()>Code</button>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+        
+             
+          </div>
+        </div>
+
+
+        <div class="card g-3">
+          <div class="row no-gutters">
+              <!-- Image on the left for lg and md screens -->
+              <div class="col-lg-6 d-none d-md-block">
+                  <img src="./img/MemoryMate.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+              </div>
+               <!-- Image on top of the text for sm screens -->
+               <div class="col-sm-12 d-md-none">
+                <img src="./img/MemoryMate.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
+               </div>
+              
+              <!-- Text on the right for lg and md screens -->
+              <div class="col-lg-6">
+                  <div class="card-body">
+                      <h4 class="card-title">Memory Mate - For dementia patients</h4>
+                      <p class="card-text">The population of elderly individuals is increasing, especially those with dementia. Existing cognitive exercising apps are ineffective, and access to necessary resources and support is limited. A solution is needed to provide tailored support for the elderly who may not be familiar with technologies. Memory Mate is an intuitive and user-friendly platform designed to address this need. The solution includes an app specifically designed for the elderly, a personalized chatbot feature, and personalized cognitive workouts tailored to the specific needs of each individual. Used React Native and Gemini AI Studio for creation of the mobile app. </p>
+                      
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                               <!-- <button type="button" class="btn btn-sm btn-outline-secondary" onclick=foodieView()>View</button>  -->
+                              <button type="button" class="btn btn-sm btn-outline-secondary" onclick=MemoryMateGit()>Code</button>
+                          </div>
+                          <!-- <small class="text-body-secondary">9 mins</small> -->
+                      </div>
+                  </div>
+              </div>
+  
+             
+          </div>
+      </div>
 
         <div class="card g-3">
           <div class="row no-gutters">
@@ -231,36 +340,7 @@
       </div>
 
 
-      <div class="card g-3">
-        <div class="row no-gutters">
-            <!-- Image on the left for lg and md screens -->
-            <div class="col-lg-6 d-none d-md-block">
-                <img src="./img/foodie.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
-            </div>
-             <!-- Image on top of the text for sm screens -->
-             <div class="col-sm-12 d-md-none">
-              <img src="./img/foodie.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
-             </div>
-            
-            <!-- Text on the right for lg and md screens -->
-            <div class="col-lg-6">
-                <div class="card-body">
-                    <h4 class="card-title">Foodie Thoughts</h4>
-                    <p class="card-text">This MVC ASP.NET web app is developed to add recipes by registering and creating your food blog. Features of the web application are controlled according to the role of the logged user. PostgreSQL is used as the database.</p>
-                    
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                             <button type="button" class="btn btn-sm btn-outline-secondary" onclick=foodieView()>View</button> 
-                            <button type="button" class="btn btn-sm btn-outline-secondary" onclick=foodieGit()>Code</button>
-                        </div>
-                        <!-- <small class="text-body-secondary">9 mins</small> -->
-                    </div>
-                </div>
-            </div>
-
-           
-        </div>
-    </div>
+      
  
 
   <div class="card g-3">
@@ -294,37 +374,7 @@
        
     </div>
 </div>
-<div class="card g-3">
-  <div class="row no-gutters">
-      <!-- Image on the left for lg and md screens -->
-      <div class="col-lg-6 d-none d-md-block">
-          <img src="./img/networkvizualisation.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
-      </div>
 
-       <!-- Image on top of the text for sm screens -->
-       <div class="col-sm-12 d-md-none">
-        <img src="./img/networkvizualisation.png" class="card-img" alt="Card image" style="width: 100%; height: 100%;">
-    </div>
-      
-      <!-- Text on the right for lg and md screens -->
-      <div class="col-lg-6">
-          <div class="card-body">
-              <h4 class="card-title">Network Visualization</h4>
-              <p class="card-text">This network visualization created using D3.js shows countries' import and export trade relationships. Nodes represent the countries, and the edges represent the trade relations. I extracted the data from a CSV file using Python, used D3.js to create data visualization and added interactions when clicking on the nodes.</p>
-              
-              <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                      <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
-                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick=datavizualizationGit()>Code</button>
-                  </div>
-                  
-              </div>
-          </div>
-      </div>
-
-     
-  </div>
-</div>
 
 <div class="card g-3">
   <div class="row no-gutters">
@@ -364,22 +414,7 @@
   </section>
 <!--Skills-->
 
-  <!--About me-->
-  <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
-    <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-xxl-8">
-                <div class="text-center my-5">
-                    <h3 class=" fw-bolder"><span class="text-gradient d-inline">Why Work With Me</span></h3>
-                    <p class="lead fw-light mb-4">I am passionate about creating solutions that help businesses grow rapidly. My skillset is diverse, covering both front-end and back-end development, which I have gained through practical experience in the industry.</p>
-                    
-                    <p class="text-muted">I am actively seeking job opportunities where I can contribute, learn, and grow. If you have any suitable openings that align with my skills and experience, please reach out to me at contact@dguruge.com.</p>
-                 
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!-- My Skills Section -->
 <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5">
