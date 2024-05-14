@@ -28,17 +28,9 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto" style="color: #D9D9D9;" > 
             <li class="nav-item">
-              <a class="nav-link"  href="#Services">Services</a>
+              <a class="nav-link"  href="Index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ContactMe">Contact Me</a>
-            </li>
+          
             
           </ul>
         </div>
@@ -48,7 +40,7 @@
   <main>
        <!-- Projects Section-->
    <section class="bg-light rounded-4 mt-5 py-5 px-4 px-md-5" id="Portfolio">
-    <div class="text-center m-5"><h3 class="fw-bolder">Cryptocurency Teaching Tool</h3></div>
+    <div class="text-center m-5"><h3 class="fw-bolder">Cryptocurrency Teaching Tool</h3></div>
     <br></br>
  
     <div class="container">
@@ -74,17 +66,17 @@
 
 
                 <h3 class="mt-5 mb-3">Approach: </h3>
-                <p> First I creaetd a development environment for the front end of the app to run locally in docker environment. Below are the docker container 
-                  Docker containers of the Django front end</p>
-                <h5 class="my-3">Bullet Points:</h5>
+                <p> First, I created a development environment for the front end of the app to run locally in a docker environment. This Docker Compose configuration defines multiple services that work together to run a web application. Let's break down each service:</p>
+                <h5 class="my-3">Services :</h5>
                 <ul class="mb-5">
-                  <li class="mb-2">Django container to work ad the web continer</li>
-                  <li class="mb-2">Postgres - This service runs a PostgreSQL database.</li>
-                  <li class="mb-2">Nginx - This service runs an Nginx web server acting as a reverse proxy.</li>
-                  <li class="mb-2">Redis - This service runs a Redis cache server.</li>
-                  <li class="mb-2">Daphne - This service builds the django web application </li>
-                
-              </ul>
+                  <li class="mb-2">web - Builds the Docker image using the Dockerfile in the current directory (.).Starts the Django web server (uwsgi) after waiting for the database (db) to be available.</li>
+                  <li class="mb-2">db - This service runs a PostgreSQL database.</li>
+                  <li class="mb-2">nginx - This service runs an Nginx web server acting as a reverse proxy.</li>
+                  <li class="mb-2">cache - This service runs a Redis cache server.</li>
+                  <li class="mb-2">daphne - Starts the Daphne server (ASGI) after waiting for the database (db) to be available. </li>    
+                 </ul>
+                 <p>In summary, this Docker Compose configuration defines services for running a web application with Django, PostgreSQL, Redis, Nginx, and Daphne (ASGI server). The db and cache services provide database and caching functionality, respectively. The web service serves the Django application using uwsgi, while the nginx service acts as a reverse proxy. Additionally, the daphne service serves the ASGI application using Daphne.</p>
+                 
             <!--   <ol class="mb-5">
                 <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
                 <li class="mb-2">Aenean commodo ligula eget dolor.</li>
@@ -146,7 +138,7 @@
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
                 
 
-<h3 class="mt-5 mb-3">Docker file</h3>
+<h3 class="mt-5 mb-3">Dockerfile</h3>
                 <p>Below is the docker file for the Django front end</p>
                 <pre>
                   <code>
